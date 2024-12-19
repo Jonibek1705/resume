@@ -6,71 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, Course, CSS, tag">
     <meta name="description" content="Eto sayt rezume Usmonova Jonibek">
+    <link rel="stylesheet" href="styles.css">
     <title>Moya pervaya stranitsa</title>
 </head>
 <body>
-    <img src="rasm3x4.jpg" alt="Bu yerda mening rasmim" width="100">
-    <h1>Usmonov Jonibek</h1>
-    <hr>
-    <p>Ya rabotayu uchitelem <strong> <i>Informatiki</i></strong> v sredney shkole №2 Tashkentskoy oblasti</p>
-    
-    <h4>Spisok sotsialnix setey:</h4>
-    <a href="https://web.telegram.org/a/" target="_blank">Telegram</a>
-    <a href="https://www.youtube.com/channel/UCnD6EQ9gCmNFArdaVex100g" target="_blank">Youtube</a>
-    <h2>Moi Hobbi</h2>
-    <ol>
-        <li>Ribalka</li>
-        <li>Sborka kompyuterov</li>
-        <li>Elektrotexnika</li>
-        <li>Futbol</li>
-        <li>Avtomobili</li>
-    </ol>
-    <hr>
-    <h2>Opit raboti</h2>
-    <table width="500" border="1">
-        <thead>
-            <tr>
-                <th>Nazvanie</th>
-                <th>Doljnost</th>
-                <th>God</th>
-            </tr>
-            
-        </thead>
-        <tbody>
-            <tr>
-                <td>Чирчиқ олий танк қўмондонлик муҳандислик  билим юрти</td>
-                <td>Курсант</td>
-                <td>1997-2001 йй</td>
-            </tr>
-            <tr>
-                <td>Шарқий харбий округ қўшинлари ихтиёридаги ҳарбий хизматда</td>
-                <td>Командир группы</td>
-                <td>2001-2008 йй</td>
-            </tr>
-        </tbody>
+    <div class="contaner">
         
-    </table>
-    <h2>Forma obratnoy svyazi</h2>
-    <form action="">
-        <div>
-            <label for="Imya">Vasha F.I.O:</label>
-            <input type="text" id="Imya" placeholder="Vvedite imya">
+        <div class="info_text">
+            <img src="rasm3x4.jpg" alt="Bu yerda mening rasmim" class="avatar">
+            <h1>Usmonov Jonibek</h1>
+            <p>Ya rabotayu uchitelem <strong> <i>Informatiki</i></strong> v sredney shkole №2 Tashkentskoy oblasti</p>
+            <h4>Spisok sotsialnix setey:</h4>
+            <a href="https://web.telegram.org/a/" target="_blank">Telegram</a> |
+            <a href="https://www.youtube.com/channel/UCnD6EQ9gCmNFArdaVex100g" target="_blank">Youtube</a>
         </div>
-        <br>
-        <div>
-            <label for="pochta">Vash email:</label>
-            <input type="email" id="pochta" placeholder="Vvedite email">
+        
+        
+        <div class="card rang_1">
+            <h2>Moi Hobbi</h2>
+            <ol>
+                <li>Ribalka</li>
+                <li>Sborka kompyuterov</li>
+                <li>Elektrotexnika</li>
+                <li>Futbol</li>
+                <li>Avtomobili</li>
+            </ol>
         </div>
-        <br>
-        <div>
-            <label for="sobshen">Vashe soobsheniye:</label> <br>
-            <textarea id="sobshen" placeholder="Vvedite soobsheniye" cols="40" rows="10"></textarea>
+        
+                
+        <div class="card rang_2">
+            <h2>Opit raboti</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazvanie</th>
+                        <th>Doljnost</th>
+                        <th>God</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Чирчиқ олий танк қўмондонлик муҳандислик  билим юрти</td>
+                        <td>Курсант</td>
+                        <td>1997-2001 йй</td>
+                    </tr>
+                    <tr>
+                        <td>Шарқий харбий округ қўшинлари ихтиёридаги ҳарбий хизматда</td>
+                        <td>Командир группы</td>
+                        <td>2001-2008 йй</td>
+                    </tr>
+                </tbody>
+                
+            </table>
         </div>
-        <br>
-        <div>
-            <input type="submit" value="Otpravit">
-            <input type="reset" value="Sbros">
-        </div>
-    </form>
+        
+        <form action="" class="form">
+            <h2>Forma obratnoy svyazi</h2>
+            <div class="form_row">
+                <div class="form_group">
+                    <label for="Imya">Vasha F.I.O:</label>
+                    <input type="text" id="Imya" placeholder="Vvedite imya">
+                </div>
+                <div class="form_group">
+                    <label for="pochta">Vash email:</label>
+                    <input type="email" id="pochta" placeholder="Vvedite email">
+                </div>
+            </div>
+
+            <div class="form_group">
+                <label for="sobshen" class="form_group1">Vashe soobsheniye:</label>
+                <textarea id="sobshen" placeholder="Vvedite soobsheniye" cols="40" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="btn" value="Otpravit">
+                <input type="reset" class="btn" value="Sbros">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
